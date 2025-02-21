@@ -20,7 +20,7 @@ public class App {
                 System.out.println("3- Quitter");
                 System.out.print("Choisissez une option: ");
                 int choix = scanner.nextInt();
-                scanner.nextLine(); // Pour consommer la nouvelle ligne
+                scanner.nextLine(); 
 
                 switch (choix) {
                     case 1:
@@ -33,7 +33,7 @@ public class App {
                         String email = scanner.nextLine();
                         System.out.print("Entrez l'ID: ");
                         int id = scanner.nextInt();
-                        scanner.nextLine(); // Pour consommer la nouvelle ligne
+                        scanner.nextLine(); 
                         GestionUtilisateurs.ajouterUtilisateur(connexion, nom, email, id);
                         break;
                     case 3:
