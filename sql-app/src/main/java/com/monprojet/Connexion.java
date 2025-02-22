@@ -6,10 +6,10 @@ import java.sql.SQLException;
 
 public class Connexion {
     private static final String URL = "jdbc:mysql://localhost:3306/ma_base";
-    private static final String UTILISATEUR = "root";
-    private static final String MOT_DE_PASSE = "";
+    private static final String username = "root";
+    private static final String password = "";
 
     public static Connection getConnexion() throws SQLException {
-        return DriverManager.getConnection(URL, UTILISATEUR, MOT_DE_PASSE);
+        return DriverManager.getConnection(URL, username, password);
     }
 }
